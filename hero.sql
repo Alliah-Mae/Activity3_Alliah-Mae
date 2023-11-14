@@ -155,3 +155,12 @@ VALUES
     --3
     ALTER TABLE public.item
     ADD COLUMN item_price DECIMAL(10, 2);
+
+    --4
+    UPDATE public.hero
+    SET is_active = false
+    WHERE hero_id = 1;
+
+
+    DELETE from public.hero item
+    WHERE hero_id = 1
